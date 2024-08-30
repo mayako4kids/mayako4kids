@@ -1,7 +1,94 @@
 <!doctype html>
-<html lang=ru>
+<html class="h-full" lang="" xmlns="">
 <head>
-<meta charset=utf-8>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dosblue: '#0000aa',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+
+    body {
+      font-family: monospace;
+      height: 100%;
+      width: 100%;
+      display: flex;
+    }
+
+    .box {
+      display: flex;
+      flex-grow: 1;
+      container-type: size;
+      container-name: cnt;
+    }
+
+    .content {
+      flex-grow: 1;
+      display: flex;
+    }
+
+    @media (orientation: portrait) {
+      body > .box {
+        flex-direction: column;
+      }
+    }
+
+    @media (orientation: landscape) {
+      body > .box {
+        flex-direction: row;
+      }
+    }
+
+    @container cnt (orientation: portrait) {
+      .content {
+        flex-direction: column;
+      }
+    }
+
+    @container cnt (orientation: landscape) {
+      .content {
+        flex-direction: row;
+      }
+    }
+
+    .square {
+      flex-grow: 0;
+    }
+
+    .reminder {
+      flex-grow: 1;
+      /*background-color: #0000aa;*/
+      text-align: center;
+    }
+
+    .grid-template {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+      "ava ava ava ava title title title title"
+      "ava ava ava ava . . . ."
+      "ava ava ava ava . . . ."
+      "ava ava ava ava . . . ."
+      "ava ava ava ava . . . ."
+      "ava ava ava ava . . . ."
+      ". . . . . . . ."
+      ". . . . . . . ctx";
+      }
+
+    .ava { grid-area: ava; }
+    .title { grid-area: title; }
+    .ctx { grid-area: ctx; }
+
+  </style>
 <title>Майя Ко — для детей</title>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -19,8 +106,480 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/96448955" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+   
 </head>
-<body>
-   <h1>Майя Ко — для детей</h1>
+
+<body class="bg-zinc-900 text-zinc-50">
+
+<div class="box">
+  <div class="content">
+    <div class="square bg-zinc-900 aspect-square">
+      <div class="p-2 h-full w-full">
+
+        <div class="h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75 grid gap-0 grid-template">
+          <div class="ava rounded bg-indigo-900">
+            <!--  -------------- REPLACE BOX DIV ----------------------- -->
+            <div class="box h-full w-full">
+              <div class="content">
+                <div class="square bg-zinc-900 aspect-square">
+                  <div class="p-2 h-full w-full">
+
+                    <div
+                      class="relative h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75">
+                      <svg class="absolute inset-0 h-full w-full stroke-zinc-100/20" fill="none">
+                        <defs>
+                          <pattern id="pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9" x="0" y="0"
+                                   width="10" height="10"
+                                   patternUnits="userSpaceOnUse">
+                            <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+                          </pattern>
+                        </defs>
+                        <rect stroke="none" fill="url(#pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9)"
+                              width="100%"
+                              height="100%"></rect>
+                      </svg>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!--  -------------- REPLACE BOX DIV ----------------------- -->
+                <div class="box">
+                  <div class="content">
+                    <div class="square bg-zinc-900 aspect-square">
+                      <div class="p-2 h-full w-full">
+
+                        <div
+                          class="relative h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75">
+                          <svg class="absolute inset-0 h-full w-full stroke-zinc-100/20" fill="none">
+                            <defs>
+                              <pattern id="pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9" x="0" y="0"
+                                       width="10" height="10"
+                                       patternUnits="userSpaceOnUse">
+                                <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+                              </pattern>
+                            </defs>
+                            <rect stroke="none" fill="url(#pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9)"
+                                  width="100%"
+                                  height="100%"></rect>
+                          </svg>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!--  -------------- REPLACE BOX DIV ----------------------- -->
+                    <div class="box">
+                      <div class="content">
+                        <div class="square bg-zinc-900 aspect-square">
+                          <div class="p-2 h-full w-full">
+
+                            <div
+                              class="relative h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75">
+                              <svg class="absolute inset-0 h-full w-full stroke-zinc-100/20" fill="none">
+                                <defs>
+                                  <pattern id="pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9" x="0" y="0"
+                                           width="10" height="10"
+                                           patternUnits="userSpaceOnUse">
+                                    <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+                                  </pattern>
+                                </defs>
+                                <rect stroke="none" fill="url(#pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9)"
+                                      width="100%"
+                                      height="100%"></rect>
+                              </svg>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!--  -------------- REPLACE BOX DIV ----------------------- -->
+                        <div class="box">
+                          <div class="content">
+                            <div class="square bg-zinc-900 aspect-square">
+                              <div class="p-2 h-full w-full">
+
+                                <div
+                                  class="relative h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75">
+                                  <svg class="absolute inset-0 h-full w-full stroke-zinc-100/20" fill="none">
+                                    <defs>
+                                      <pattern id="pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9" x="0" y="0"
+                                               width="10" height="10"
+                                               patternUnits="userSpaceOnUse">
+                                        <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+                                      </pattern>
+                                    </defs>
+                                    <rect stroke="none" fill="url(#pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9)"
+                                          width="100%"
+                                          height="100%"></rect>
+                                  </svg>
+                                </div>
+
+                              </div>
+                            </div>
+
+                            <!--  -------------- BOX DIV ----------------------- -->
+                            <div class="BOX reminder bg-zinc-900 overflow-hidden">k.pro</div>
+                            <!--  -------------- BOX DIV ----------------------- -->
+
+                          </div>
+                        </div>
+                        <!--  -------------- REPLACE BOX DIV ----------------------- -->
+                      </div>
+                    </div>
+                    <!--  -------------- REPLACE BOX DIV ----------------------- -->
+
+                  </div>
+                </div>
+                <!--  -------------- REPLACE BOX DIV ----------------------- -->
+
+              </div>
+            </div>
+            <!--  -------------- REPLACE BOX DIV ----------------------- -->
+          </div>
+          <div class="title rounded bg-amber-900">
+            <!--  -------------- REPLACE BOX DIV ----------------------- -->
+            <div class="box h-full w-full">
+              <div class="content">
+                <div class="square bg-zinc-900 aspect-square">
+                  <div class="p-2 h-full w-full">
+
+                    <div
+                      class="relative h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75">
+                      <svg class="absolute inset-0 h-full w-full stroke-zinc-100/20" fill="none">
+                        <defs>
+                          <pattern id="pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9" x="0" y="0"
+                                   width="10" height="10"
+                                   patternUnits="userSpaceOnUse">
+                            <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+                          </pattern>
+                        </defs>
+                        <rect stroke="none" fill="url(#pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9)"
+                              width="100%"
+                              height="100%"></rect>
+                      </svg>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!--  -------------- REPLACE BOX DIV ----------------------- -->
+                <div class="box">
+                  <div class="content">
+                    <div class="square bg-zinc-900 aspect-square">
+                      <div class="p-2 h-full w-full">
+
+                        <div
+                          class="relative h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75">
+                          <svg class="absolute inset-0 h-full w-full stroke-zinc-100/20" fill="none">
+                            <defs>
+                              <pattern id="pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9" x="0" y="0"
+                                       width="10" height="10"
+                                       patternUnits="userSpaceOnUse">
+                                <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+                              </pattern>
+                            </defs>
+                            <rect stroke="none" fill="url(#pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9)"
+                                  width="100%"
+                                  height="100%"></rect>
+                          </svg>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!--  -------------- REPLACE BOX DIV ----------------------- -->
+                    <div class="box">
+                      <div class="content">
+                        <div class="square bg-zinc-900 aspect-square">
+                          <div class="p-2 h-full w-full">
+
+                            <div
+                              class="relative h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75">
+                              <svg class="absolute inset-0 h-full w-full stroke-zinc-100/20" fill="none">
+                                <defs>
+                                  <pattern id="pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9" x="0" y="0"
+                                           width="10" height="10"
+                                           patternUnits="userSpaceOnUse">
+                                    <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+                                  </pattern>
+                                </defs>
+                                <rect stroke="none" fill="url(#pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9)"
+                                      width="100%"
+                                      height="100%"></rect>
+                              </svg>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <!--  -------------- BOX DIV ----------------------- -->
+                        <div class="BOX reminder bg-zinc-900 overflow-hidden">k.pro</div>
+                        <!--  -------------- BOX DIV ----------------------- -->
+
+                      </div>
+                    </div>
+                    <!--  -------------- REPLACE BOX DIV ----------------------- -->
+
+                  </div>
+                </div>
+                <!--  -------------- REPLACE BOX DIV ----------------------- -->
+
+              </div>
+            </div>
+            <!--  -------------- REPLACE BOX DIV ----------------------- -->
+          </div>
+          <div class="ctx rounded bg-pink-900">
+            <!--  -------------- REPLACE BOX DIV ----------------------- -->
+            <div class="box h-full h-full">
+              <div class="content">
+                <div class="square bg-zinc-900 aspect-square">
+                  <div class="p-2 h-full w-full">
+
+                    <div
+                      class="relative h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75">
+                      <svg class="absolute inset-0 h-full w-full stroke-zinc-100/20" fill="none">
+                        <defs>
+                          <pattern id="pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9" x="0" y="0"
+                                   width="10" height="10"
+                                   patternUnits="userSpaceOnUse">
+                            <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+                          </pattern>
+                        </defs>
+                        <rect stroke="none" fill="url(#pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9)"
+                              width="100%"
+                              height="100%"></rect>
+                      </svg>
+                    </div>
+
+                  </div>
+                </div>
+
+                <!--  -------------- REPLACE BOX DIV ----------------------- -->
+                <div class="box">
+                  <div class="content">
+                    <div class="square bg-zinc-900 aspect-square">
+                      <div class="p-2 h-full w-full">
+
+                        <div
+                          class="relative h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75">
+                          <svg class="absolute inset-0 h-full w-full stroke-zinc-100/20" fill="none">
+                            <defs>
+                              <pattern id="pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9" x="0" y="0"
+                                       width="10" height="10"
+                                       patternUnits="userSpaceOnUse">
+                                <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+                              </pattern>
+                            </defs>
+                            <rect stroke="none" fill="url(#pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9)"
+                                  width="100%"
+                                  height="100%"></rect>
+                          </svg>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <!--  -------------- BOX DIV ----------------------- -->
+                    <div class="BOX reminder bg-zinc-900 overflow-hidden">k.pro</div>
+                    <!--  -------------- BOX DIV ----------------------- -->
+
+                  </div>
+                </div>
+                <!--  -------------- REPLACE BOX DIV ----------------------- -->
+
+              </div>
+            </div>
+            <!--  -------------- REPLACE BOX DIV ----------------------- -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="content">
+        <div class="square bg-zinc-900 aspect-square">
+          <div class="p-2 h-full w-full">
+
+              <div class="relative h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75">
+                <svg class="absolute inset-0 h-full w-full stroke-zinc-100/20" fill="none">
+                  <defs>
+                    <pattern id="pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9" x="0" y="0" width="10" height="10"
+                             patternUnits="userSpaceOnUse">
+                      <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+                    </pattern>
+                  </defs>
+                  <rect stroke="none" fill="url(#pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9)" width="100%"
+                        height="100%"></rect>
+                </svg>
+              </div>
+
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="content">
+            <div class="square bg-zinc-900 aspect-square">
+              <div class="p-2 h-full w-full">
+
+                  <div
+                    class="relative h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75">
+                    <svg class="absolute inset-0 h-full w-full stroke-zinc-100/20" fill="none">
+                      <defs>
+                        <pattern id="pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9" x="0" y="0" width="10" height="10"
+                                 patternUnits="userSpaceOnUse">
+                          <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+                        </pattern>
+                      </defs>
+                      <rect stroke="none" fill="url(#pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9)" width="100%"
+                            height="100%"></rect>
+                    </svg>
+                  </div>
+
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="content">
+                <div class="square bg-zinc-900 aspect-square">
+                  <div class="p-2 h-full w-full">
+
+                      <div
+                        class="relative h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75">
+                        <svg class="absolute inset-0 h-full w-full stroke-zinc-100/20" fill="none">
+                          <defs>
+                            <pattern id="pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9" x="0" y="0" width="10"
+                                     height="10"
+                                     patternUnits="userSpaceOnUse">
+                              <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+                            </pattern>
+                          </defs>
+                          <rect stroke="none" fill="url(#pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9)" width="100%"
+                                height="100%"></rect>
+                        </svg>
+                      </div>
+
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="content">
+                    <div class="square bg-zinc-900 aspect-square">
+                      <div class="p-2 h-full w-full">
+
+                          <div
+                            class="relative h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75">
+                            <svg class="absolute inset-0 h-full w-full stroke-zinc-100/20" fill="none">
+                              <defs>
+                                <pattern id="pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9" x="0" y="0" width="10"
+                                         height="10"
+                                         patternUnits="userSpaceOnUse">
+                                  <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+                                </pattern>
+                              </defs>
+                              <rect stroke="none" fill="url(#pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9)" width="100%"
+                                    height="100%"></rect>
+                            </svg>
+                          </div>
+
+                      </div>
+                    </div>
+
+                    <div class="box">
+                      <div class="content">
+                        <div class="square bg-zinc-900 aspect-square">
+                          <div class="p-2 h-full w-full">
+
+                              <div
+                                class="relative h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75">
+                                <svg class="absolute inset-0 h-full w-full stroke-zinc-100/20" fill="none">
+                                  <defs>
+                                    <pattern id="pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9" x="0" y="0" width="10"
+                                             height="10"
+                                             patternUnits="userSpaceOnUse">
+                                      <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+                                    </pattern>
+                                  </defs>
+                                  <rect stroke="none" fill="url(#pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9)"
+                                        width="100%"
+                                        height="100%"></rect>
+                                </svg>
+                              </div>
+
+                          </div>
+                        </div>
+
+                        <div class="box">
+                          <div class="content">
+                            <div class="square bg-zinc-900 aspect-square">
+                              <div class="p-2 h-full w-full">
+
+                                  <div
+                                    class="relative h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75">
+                                    <svg class="absolute inset-0 h-full w-full stroke-zinc-100/20" fill="none">
+                                      <defs>
+                                        <pattern id="pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9" x="0" y="0"
+                                                 width="10" height="10"
+                                                 patternUnits="userSpaceOnUse">
+                                          <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+                                        </pattern>
+                                      </defs>
+                                      <rect stroke="none" fill="url(#pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9)"
+                                            width="100%"
+                                            height="100%"></rect>
+                                    </svg>
+                                  </div>
+
+                              </div>
+                            </div>
+
+                            <!--  -------------- REPLACE BOX DIV ----------------------- -->
+                            <div class="box">
+                              <div class="content">
+                                <div class="square bg-zinc-900 aspect-square">
+                                  <div class="p-2 h-full w-full">
+
+                                      <div
+                                        class="relative h-full overflow-hidden rounded border border-dashed border-gray-400 opacity-75">
+                                        <svg class="absolute inset-0 h-full w-full stroke-zinc-100/20" fill="none">
+                                          <defs>
+                                            <pattern id="pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9" x="0" y="0"
+                                                     width="10" height="10"
+                                                     patternUnits="userSpaceOnUse">
+                                              <path d="M-3 13 15-5M-5 5l18-18M-1 21 17 3"></path>
+                                            </pattern>
+                                          </defs>
+                                          <rect stroke="none" fill="url(#pattern-87beeb02-b726-4cd1-be69-ae5bc27986e9)"
+                                                width="100%"
+                                                height="100%"></rect>
+                                        </svg>
+                                      </div>
+
+                                  </div>
+                                </div>
+
+                                <!--  -------------- BOX DIV ----------------------- -->
+                                <div class="BOX reminder bg-zinc-900 overflow-hidden"><h1>Майя Ко — для детей</h1></div>
+                                <!--  -------------- BOX DIV ----------------------- -->
+
+                              </div>
+                            </div>
+                            <!--  -------------- REPLACE BOX DIV ----------------------- -->
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
-</html>
